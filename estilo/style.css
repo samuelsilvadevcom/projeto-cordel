@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*fonts*/
+
+/*"Passion One", serif;*/ @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+/*"Sriracha", serif;*/@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*general settings*/
+
+:root{
+    --main-font: Verdana, Geneva, Tahoma, sans-serif;
+    --title-font: "Passion One", serif;
+    --image-font: "Sriracha", serif; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    min-height: 100vh;
+    background-color: rgb(179, 179, 179);
+    font-family: var(--main-font);
+
+}
+
+/*header*/
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2.5em;
+}
+header>h1{
+    font-variant: small-caps;
+    font-family: var(--title-font);
+    font-size: 10vw;
+}
+header>p>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+header>p>a:hover{
+    text-decoration: underline;
+    font-size: 16.5px;
+}
+
+/*main*/
+
+section{
+    padding: 10vh 1em;
+    line-height: 2em;
+    font-family: var(--image-font);
+    font-size: 3.5vw;
+}
+section>p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.image{
+    background: rgb(40, 40, 40);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.4); 
+    /*inset = sombra interna*/
+}
+section.image>p{
+    display: inline-block; /*background do tamanho dp <p>*/
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.43);
+    text-shadow: 2px 1px 0px black;
+}
+section#img01{
+    background: rgb(40, 40, 40) url('../imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+section#img02{
+    background: rgb(40, 40, 40) url('../imagens/background002.jpg') right center no-repeat fixed;
+    background-size: cover;     
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    color: white;
+}
+footer>p{
+    padding: 8px;
+    
+}
+footer>p>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer>p>a:hover{
+    text-decoration: underline;
+    font-size: 16.5px;
+}
